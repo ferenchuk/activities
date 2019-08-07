@@ -1,0 +1,50 @@
+.activity-item {
+    height: 205px;
+    display: flex;
+    border: 10px solid #f4f4f4;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image-container {
+    height: 185px;
+    width: 25%;
+    background-size: cover!important;
+    background-position: center!important;
+}
+
+.activity-content {
+    padding: 20px 25px;
+    width: 55%;
+
+    h2 {
+        color: #485567;
+        margin: 0;
+    }
+
+    p {
+        color: #9CA3AD;
+    }
+}
+
+.price {
+    border-right: 10px solid #f4f4f4;
+    padding: 20px 25px;
+    width: 20%;
+    text-align: center;
+}
+
+.gallery-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+}

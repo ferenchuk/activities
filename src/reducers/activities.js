@@ -9,7 +9,6 @@ export default function(state = initialState, action) {
 
   switch (type) {
     case FETCH_ACTIVITIES_SUCCESS:
-      debugger;
       return {
         ...state,
         items: payload.activities
