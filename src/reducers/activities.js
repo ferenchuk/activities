@@ -1,4 +1,5 @@
 import { FETCH_ACTIVITIES_SUCCESS } from "./../constants/activities";
+import objectToArray from './../helpers/objToArray';
 
 const initialState = {
   items: []
@@ -11,7 +12,7 @@ export default function(state = initialState, action) {
     case FETCH_ACTIVITIES_SUCCESS:
       return {
         ...state,
-        items: payload.activities
+        items: objectToArray(payload.activities)
       };
 
     default:

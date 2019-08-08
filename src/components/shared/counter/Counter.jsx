@@ -24,9 +24,9 @@ class Counter extends Component {
 
     render() {
         return (
-            <div class="counter">
+            <div className="counter">
                 <span className="increment" onClick={this.handleIncrementClick}>+</span>
-                <input type="text" value={this.state.counter} />
+                <input type="text" value={this.state.counter} readOnly />
                 <span className="decrement" onClick={this.handleDecrementClick}>-</span>
             </div>
         );

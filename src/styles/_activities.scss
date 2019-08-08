@@ -78,3 +78,18 @@
         fill: white;
     }
 }
+
+.load-more {
+    text-align: center;
+    margin-bottom: 20px;
+
+    button {
+        padding: 10px 40px;
+        background: #E9444E;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
