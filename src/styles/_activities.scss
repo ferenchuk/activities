@@ -1,95 +1,95 @@
 .activities-head {
-    padding: 10px 0;
-    font-size: 18px;
+  padding: 10px 0;
+  font-size: 18px;
 }
 
 .activity-item {
-    height: 205px;
-    display: flex;
-    border: 10px solid #f4f4f4;
-    margin-bottom: 40px;
-    justify-content: space-between;
-    position: relative;
+  height: 205px;
+  display: flex;
+  border: 10px solid #f4f4f4;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .image-container {
-    height: 185px;
-    width: 25%;
-    background-size: cover!important;
-    background-position: center!important;
+  height: 185px;
+  width: 25%;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .activity-content {
-    padding: 20px 25px;
-    width: 55%;
+  padding: 20px 25px;
+  width: 55%;
 
-    h2 {
-        color: #485567;
-        margin: 0;
-    }
+  h2 {
+    color: #485567;
+    margin: 0;
+  }
 
-    p {
-        color: #9CA3AD;
-    }
+  p {
+    color: #9CA3AD;
+  }
 }
 
 .price-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right: 10px solid #f4f4f4;
-    padding: 20px 25px;
-    width: 20%;
-    text-align: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 10px solid #f4f4f4;
+  padding: 20px 25px;
+  width: 20%;
+  text-align: center;
+  position: relative;
 
 
-    &-value {
-        font-weight: bold;
-        font-size: 24px;
-        color: #545454;
-    }
+  &-value {
+    font-weight: bold;
+    font-size: 24px;
+    color: #545454;
+  }
 
-    .popular {
-        background: #f4f4f4;
-        font-weight: bold;
-        padding: 5px;
-    }
+  .popular {
+    background: #f4f4f4;
+    font-weight: bold;
+    padding: 5px;
+  }
 
-    .price-value {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        margin: 0 auto;
-        width: 100%;
-    }
+  .price-value {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .gallery-icon {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: white;
-    cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
 
-    svg {
-        width: 20px;
-        height: 20px;
-        fill: white;
-    }
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
 }
 
 .load-more {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 
-    button {
-        padding: 10px 40px;
-        background: #E9444E;
-        color: white;
-        font-size: 18px;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-    }
+  button {
+    padding: 10px 40px;
+    background: #E9444E;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 }

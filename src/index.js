@@ -7,10 +7,10 @@ import * as serviceWorker from './serviceWorker';
 import store from './reducers/index';
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.getElementById('root')
 );
 
 

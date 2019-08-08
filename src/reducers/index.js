@@ -4,17 +4,17 @@ import activities from './activities';
 import mySaga from './../sagas';
 
 const rootReducer = combineReducers({
-    activities
+  activities
 });
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
-    rootReducer,
-    compose(
-        applyMiddleware(sagaMiddleware),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    )
+  rootReducer,
+  compose(
+    applyMiddleware(sagaMiddleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 );
 
 sagaMiddleware.run(mySaga);
