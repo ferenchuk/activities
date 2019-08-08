@@ -41,7 +41,7 @@ class ActivityItem extends Component {
                     </div>
                 </div>
                 <div className="price-block">
-                    {popular && (<div className="popular">Popular!</div>)}
+                    {popular && (<div className="popular">Popular</div>)}
                     <div className="price-value">
                         <span className="price-block-value">{`+${price} $`}</span>
                         <Counter />
