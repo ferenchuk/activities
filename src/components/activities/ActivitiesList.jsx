@@ -18,8 +18,10 @@ class ActivitiesList extends Component {
 
 		return (
 			<div>
-				<div className="total-items">
-					{`${activitiesArray.length} items`}
+				<div className="activities-head">
+					<div className="total-items">
+						{`${activitiesArray.length} items`}
+					</div>
 				</div>
 				{activitiesArray.length && activitiesArray.map(activity => (
 					<ActivityItem {...activity} key={shortId.generate()} />

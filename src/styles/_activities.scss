@@ -1,3 +1,8 @@
+.activities-head {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
 .activity-item {
     height: 205px;
     display: flex;
@@ -28,11 +33,36 @@
     }
 }
 
-.price {
+.price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-right: 10px solid #f4f4f4;
     padding: 20px 25px;
     width: 20%;
     text-align: center;
+    position: relative;
+
+
+    &-value {
+        font-weight: bold;
+        font-size: 24px;
+        color: #545454;
+    }
+
+    .popular {
+        background: #f4f4f4;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .price-value {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 .gallery-icon {
