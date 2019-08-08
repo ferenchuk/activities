@@ -32,7 +32,7 @@ class ActivitiesList extends Component {
 			<div>
 				<div className="activities-head">
 					<div className="total-items">
-						{`${activities.items.length} items`}
+						{`${activities.items.slice(0, limit).length} items`}
 					</div>
 				</div>
 				{activities.items.length && activities.items.slice(0, limit).map(activity => (
