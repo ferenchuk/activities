@@ -6,62 +6,95 @@
 .activity-item {
   height: 205px;
   display: flex;
-  border: 10px solid #f4f4f4;
-  margin-bottom: 40px;
+  border: 10px solid $lightgray;
+  margin-bottom: 30px;
   justify-content: space-between;
   position: relative;
-}
 
-.image-container {
-  height: 185px;
-  width: 25%;
-  background-size: cover !important;
-  background-position: center !important;
-}
-
-.activity-content {
-  padding: 20px 25px;
-  width: 55%;
-
-  h2 {
-    color: #485567;
-    margin: 0;
+  &.full {
+    height: auto;
   }
 
-  p {
-    color: #9CA3AD;
-  }
-}
+  .image-container {
+    height: 185px;
+    width: 25%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
 
-.price-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-right: 10px solid #f4f4f4;
-  padding: 20px 25px;
-  width: 20%;
-  text-align: center;
-  position: relative;
-
-
-  &-value {
-    font-weight: bold;
-    font-size: 24px;
-    color: #545454;
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      height: 40vh;
+    }
   }
 
-  .popular {
-    background: #f4f4f4;
-    font-weight: bold;
-    padding: 5px;
+  .activity-content {
+    padding: 20px 25px;
+    width: 55%;
+
+    .information {
+      display: flex;
+      justify-content: space-between;
+
+      .read-more-btn {
+        cursor: pointer;
+      }
+    }
+
+    h2 {
+      color: $gray;
+      margin: 0;
+    }
+
+    p {
+      color: #9CA3AD;
+    }
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+    }
   }
 
-  .price-value {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    margin: 0 auto;
-    width: 100%;
+  .price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 10px solid $lightgray;
+    padding: 20px 25px 80px;
+    width: 20%;
+    text-align: center;
+    position: relative;
+
+
+    &-value {
+      font-weight: bold;
+      font-size: 24px;
+      color: #545454;
+    }
+
+    .popular {
+      background: $lightgray;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .price-value {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      border-right: none;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    height: auto;
+    flex-direction: column;
   }
 }
 
@@ -85,7 +118,7 @@
 
   button {
     padding: 10px 40px;
-    background: #E9444E;
+    background: $amaranth;
     color: white;
     font-size: 18px;
     border: none;
