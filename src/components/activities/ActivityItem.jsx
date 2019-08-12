@@ -7,23 +7,31 @@ class ActivityItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showGallery: false
+      showGallery: false,
+      readMore: false
     };
 
     this.toggleShowGallery = this.toggleShowGallery.bind(this);
+    this.toggleReadMore = this.toggleReadMore.bind(this);
   }
 
   toggleShowGallery() {
-    this.setState({showGallery: !this.state.showGallery});
+    const { showGallery } = this.state;
+    this.setState({showGallery: !showGallery});
+  }
+
+  toggleReadMore() {
+    const { readMore } = this.state;
+    this.setState({readMore: !readMore});
   }
 
   render() {
     const { name, description, images, price, dates, popular } = this.props;
-    const { showGallery } = this.state;
+    const { showGallery, readMore } = this.state;
     const descriptionPreview = description.length > 200 ? description.slice(0, 200).concat('...') : description;
 
     return (
-      <div className="activity-item">
+      <div className={`activity-item ${readMore ? 'full' : ''}`}>
         <div className="image-container" style={{
           background: `url(${images[0]})`
         }}>
@@ -34,10 +42,11 @@ class ActivityItem extends Component {
         <div className="activity-content">
           <div className="description">
             <h2>{name}</h2>
-            <p>{descriptionPreview}</p>
+            <p>{readMore ? description : descriptionPreview}</p>
           </div>
           <div className="information">
-            <p>{dates[0]}</p>
+            <span>{dates[0]}</span>
+            {description.length > 200 && (<span className="read-more-btn" onClick={this.toggleReadMore}>{ readMore ? 'Show Less' : 'Read more'}</span>)}
           </div>
         </div>
         <div className="price-block">

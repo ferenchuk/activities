@@ -6,10 +6,10 @@ export const fetchActivities = () => ({
 
 export const fetchActivitiesSuccess = activities => ({
   type: types.FETCH_ACTIVITIES_SUCCESS,
-  payload: {activities}
+  payload: { activities }
 });
 
 export const fetchActivitiesFailed = error => ({
   type: types.FETCH_ACTIVITIES_FAILED,
-  payload: {error}
-})
+  payload: { error }
+});
